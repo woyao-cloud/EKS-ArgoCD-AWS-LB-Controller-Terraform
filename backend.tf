@@ -14,13 +14,13 @@ terraform {
       version = "~> 2.10.0"
     }
   }
-  backend "s3" {
+/*   backend "s3" {
     bucket         = "my-ews-baket1"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "Lock-Files"
     encrypt        = true
-  }
+  } */
 }
 
 provider "aws" {
